@@ -29,13 +29,33 @@ namespace WindowsFormsApp1
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.textBox_Print = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // textBox_Print
+            // 
+            this.textBox_Print.Location = new System.Drawing.Point(12, 12);
+            this.textBox_Print.Multiline = true;
+            this.textBox_Print.Name = "textBox_Print";
+            this.textBox_Print.Size = new System.Drawing.Size(776, 426);
+            this.textBox_Print.TabIndex = 0;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox_Print);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox textBox_Print;
     }
 }
 
