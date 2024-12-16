@@ -16,8 +16,58 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
 
-            MessageBox.Show("Hello");
-            textBox_Print.Text = "hi\r\nhello\r\n안녕\r\n하세요";
+            byte classHumanNum = 30;
+            short seoulBusanDistance = 20000;
+            int schoolTeacherAge = 28;
+            float distanceToSun = 10000000000;
+            double spaceRocketFire = 89.124;
+            decimal koreaPeopleHairNum = 99999999999;
+
+            textBox_Print.Text += classHumanNum.GetType();
+            textBox_Print.Text += " ";
+            textBox_Print.Text += "classHumanNum:";
+            textBox_Print.Text += " ";
+            textBox_Print.Text += classHumanNum;
+
+            textBox_Print.Text += "\r\n";
+
+            textBox_Print.Text += seoulBusanDistance.GetType();
+            textBox_Print.Text += " ";
+            textBox_Print.Text += "seoulBusanDistance:";
+            textBox_Print.Text += " ";
+            textBox_Print.Text += seoulBusanDistance;
+
+            textBox_Print.Text += "\r\n";
+
+            textBox_Print.Text += schoolTeacherAge.GetType();
+            textBox_Print.Text += " ";
+            textBox_Print.Text += "schoolTeacherAge:";
+            textBox_Print.Text += " ";
+            textBox_Print.Text += schoolTeacherAge;
+
+            textBox_Print.Text += "\r\n";
+
+            textBox_Print.Text += distanceToSun.GetType();
+            textBox_Print.Text += " ";
+            textBox_Print.Text += "distanceToSun:";
+            textBox_Print.Text += " ";
+            textBox_Print.Text += distanceToSun;
+
+            textBox_Print.Text += "\r\n";
+
+            textBox_Print.Text += spaceRocketFire.GetType();
+            textBox_Print.Text += " ";
+            textBox_Print.Text += "spaceRocketFire:";
+            textBox_Print.Text += " ";
+            textBox_Print.Text += spaceRocketFire;
+
+            textBox_Print.Text += "\r\n";
+
+            textBox_Print.Text += koreaPeopleHairNum.GetType();
+            textBox_Print.Text += " ";
+            textBox_Print.Text += "koreaPeopleHairNum:";
+            textBox_Print.Text += " ";
+            textBox_Print.Text += koreaPeopleHairNum;
         }
     }
 }
