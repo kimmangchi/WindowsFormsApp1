@@ -15,7 +15,7 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
-
+         //실습
             byte classHumanCount = 30;
             short seoulBusanDistance = 20000;
             int schoolTeacherAge = 28;
@@ -74,23 +74,34 @@ namespace WindowsFormsApp1
             textBox_Print.Text += " ";
             textBox_Print.Text += koreaPeopleHairNum;
 
+        //함수 선언
             int a = 100;
             int b = 33;
 
-            int[] result = division(a, b);
+            int[] result = divideAndRemain(a, b);
 
             textBox_Print.Text += "\r\n\r\n";
 
             textBox_Print.Text += "quotient : ";
-            textBox_Print.Text += array[0];
+            textBox_Print.Text += result[0];
 
             textBox_Print.Text += "\r\n";
 
             textBox_Print.Text += "remainder : ";
-            textBox_Print.Text += array[1];
+            textBox_Print.Text += result[1];
+
+         //if문 실습
+            int coinFrontBack = 1;
+
+            textBox_Print.Text += "\r\n\r\n";
+
+            textBox_Print.Text += "coin result : ";
+            textBox_Print.Text += coin(coinFrontBack);
+
+
         }
 
-        int[] division(int x, int y)
+        int[] divideAndRemain(int x, int y)
         {
             int[] result = new int[2];
             result[0] = x / y;
@@ -99,5 +110,21 @@ namespace WindowsFormsApp1
             return result;
         }
 
+        bool coin(int x)
+        {
+            Random randomObj = new Random();
+            int randomValue = randomObj.Next();
+
+            int randomValueResult = randomValue % 2;
+
+            if(x == randomValueResult)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
     }
 }
