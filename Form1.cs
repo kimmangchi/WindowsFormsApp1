@@ -112,7 +112,7 @@ namespace WindowsFormsApp1
 
         bool coin(bool x)
         {
-            bool result;
+            bool frontOrBack;
 
             Random randomObj = new Random();
             int randomValue = randomObj.Next();
@@ -122,15 +122,15 @@ namespace WindowsFormsApp1
             //int인 난수를 bool로 변환 
             if(randomValueResult == 1)
             {
-                result = true;
+                frontOrBack = true;
             }
             else
             {
-                result = false;
+                frontOrBack = false;
             }
 
             //변환 후 앞과 뒤 비교 후 결과 반환
-            if(x == result)
+            if(x == frontOrBack)
             {
                 return true;
             }
