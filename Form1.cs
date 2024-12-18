@@ -91,7 +91,7 @@ namespace WindowsFormsApp1
             textBox_Print.Text += result[1];
 
          //if문 실습
-            int coinFrontBack = 1;
+            bool coinFrontBack = true;
 
             textBox_Print.Text += "\r\n\r\n";
 
@@ -110,14 +110,27 @@ namespace WindowsFormsApp1
             return result;
         }
 
-        bool coin(int x)
+        bool coin(bool x)
         {
+            bool result;
+
             Random randomObj = new Random();
             int randomValue = randomObj.Next();
 
             int randomValueResult = randomValue % 2;
 
-            if(x == randomValueResult)
+            //int인 난수를 bool로 변환 
+            if(randomValueResult == 1)
+            {
+                result = true;
+            }
+            else
+            {
+                result = false;
+            }
+
+            //변환 후 앞과 뒤 비교 후 결과 반환
+            if(x == result)
             {
                 return true;
             }
